@@ -326,7 +326,7 @@
     </div>
   <div class="footer">
    <ul class="social_list list-unstyled mt-4">
-    Find us on:
+    Find us on:<br>
     <li>
         <a href="https://www.facebook.com/opencodeiiita/" >
             <span class="fa fa-facebook"></span>
@@ -349,8 +349,10 @@
       </a>
   </li>
   </ul>
+  <div class="text-copyright">
   © Copyright <strong>OpenCode'20</strong> | GeekHaven - IIIT Allahabad
-  </div>
+  </div> 
+</div>
 </footer>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
@@ -393,24 +395,34 @@
 }
 
 .social_list li a {
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     margin: 0.5em;
     background: #fff;
-    display: inline-block;
+    display: block;
 
 }
 
 .social_list li a span {
-    color: #333;
+    color: black;
     font-size: 0.9em;
     text-align: center;
-    margin: 0;
+    margin: 0.2;
     line-height: 2.5em;
+}
+.social_list :hover{
+  background:cornsilk;
+  border-radius: 50%;
+}
+@media screen and (max-width: 450px) {
+  .text-copyright {
+    display: block;
+    font-size: small;
+  }
 }
 </style>
 
